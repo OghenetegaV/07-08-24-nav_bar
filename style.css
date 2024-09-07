@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: rgb(214, 12, 106);
+}
+
+header {
+    background-color: rgb(214, 12, 106);
+    display: flex;
+    padding: 20px;
+    justify-content:space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#logo {
+    color: white;
+    font-weight: 800;
+    justify-content: end;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#nav-icon {
+    display: none;
+}
+
+#cancel-icon {
+    display: none;
+}
+
+
+@media (max-width: 900px) {
+    #nav-icon {
+        display: inline;
+    }
+
+    #nav {
+        min-width: 200px;
+        min-height: 250px;
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0,0.5);
+        color: rgb(214, 12, 106);
+        border-radius: 5px;
+        padding: 20px;
+        align-content: center;
+        justify-content: space-around;
+        position: absolute;
+        top: 0px;
+        right: 0;
+    }
+
+    #cancel-icon {
+        padding-left: 80%;
+        margin: 0;
+    }
+
+    main {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    main img {
+        max-width: 300px;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro {
+    color: pink;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+span {
+    color: rgb(63, 172, 63);
+}
+
+button {
+    padding: 15px;
+    background-color: rgb(214, 12, 106);
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background-color: white;
+    color: rgb(214, 12, 106);
+    border: 1px solid rgb(214, 12, 106);
+}
+
+#about-us {
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+#about-us img {
+
+    min-width: 100%;
+}
+
+#services {
+    height: 100vh;
+    background-color: pink;
+}
+
+#contact {
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+
+/* SERVICES */
+#services {
+    text-align: center;
+    padding: 20px;
+    color: rgb(214, 12, 106);
+}
+.service-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.service {
+    max-width: 300px;
+    min-height: 60vh;
+    border: 2px solid rgb(214, 12, 106);
+    border-radius: 30px;
+    padding: 20px;
+    background-color: rgba(63, 172, 63, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px;
+}
+
+.service button {
+    background-color: black;
+    padding: 10px 20px;
+    background-color: rgb(214, 12, 106);
+    border: none;
+    width: 50%;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    main {
+        height: 100%;
+    }
+    #intro {
+        margin: 20px;
+    }
+
+    #services {
+        height: 100%;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
