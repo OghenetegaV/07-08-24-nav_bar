@@ -36,51 +36,12 @@ a:hover {
 
 #nav-icon {
     display: none;
+    cursor: pointer;
 }
 
 #cancel-icon {
     display: none;
-}
-
-
-@media (max-width: 900px) {
-    #nav-icon {
-        display: inline;
-    }
-
-    #nav {
-        min-width: 200px;
-        min-height: 250px;
-        display: none;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0,0.5);
-        color: rgb(214, 12, 106);
-        border-radius: 5px;
-        padding: 20px;
-        align-content: center;
-        justify-content: space-around;
-        position: absolute;
-        top: 0px;
-        right: 0;
-    }
-
-    #cancel-icon {
-        padding-left: 80%;
-        margin: 0;
-    }
-
-    main {
-        flex-direction: column;
-        margin-top: 50px;
-    }
-
-    main img {
-        max-width: 300px;
-    }
-
-    .service-container {
-        flex-direction: column;
-    }
+    cursor: pointer;
 }
 
 main {
@@ -123,12 +84,11 @@ button:active {
 }
 
 #about-us {
-    height: 100vh;
+    height: 0vh;
     background-color: antiquewhite;
 }
 
 #about-us img {
-
     min-width: 100%;
 }
 
@@ -179,10 +139,52 @@ button:active {
     cursor: pointer;
 }
 
-@media (max-width: 900px) {
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 680px) {
+    #nav-icon {
+        display: inline;
+    }
+
+    #nav {
+        min-width: 150px;
+        min-height: 250px;
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0,0.5);
+        color: rgb(214, 12, 106);
+        border-radius: 5px;
+        padding: 15px;
+        align-content: center;
+        justify-content: space-around;
+        position: absolute;
+        top: 0.3em;
+        right: 0.3em;
+    }
+
+    #cancel-icon {
+        padding-left: 80%;
+        margin: 0;
+    }
+
+    main {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    main img {
+        max-width: 300px;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+    
     main {
         height: 100%;
     }
+
     #intro {
         margin: 20px;
     }
